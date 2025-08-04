@@ -707,6 +707,7 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
 .hero {
   width: 100%;
   min-height: 100vh;
@@ -1101,7 +1102,10 @@ section,
     margin: 0 5px;
   }
 }
-
+.portfolio-item {
+  padding: 15px;
+  box-sizing: border-box;
+}
 .portfolio .portfolio-content {
   position: relative;
   overflow: hidden;
@@ -1109,7 +1113,13 @@ section,
 
 .portfolio .portfolio-content img {
   transition: 0.3s;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
 }
+
 
 .portfolio .portfolio-content .portfolio-info {
   opacity: 0;
